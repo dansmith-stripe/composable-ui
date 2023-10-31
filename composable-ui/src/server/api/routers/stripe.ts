@@ -29,7 +29,7 @@ export const stripeRouter = createTRPCRouter({
         usage: z.string().regex(/on_session|off_session/),
         email: z.string().email().optional(),
         customer: z.string().optional(),
-        automatic_payment_methods: 'true',
+        // automatic_payment_methods: 'true',
       })
     )
     .mutation(async ({ input, ctx }) => {
